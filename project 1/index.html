@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A premium dining experience — book your table and explore our menu." />
+  <title> Boo's Bites </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Golden Ember Restaurant">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span class="brand-text">
+          <span class="brand-name">Boo's Bites</span>
+          <span class="brand-tag">Restaurant &amp; Lounge</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu" type="button">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-list" id="navMenu">
+          <li><a href="#about" data-scroll>About</a></li>
+          <li><a href="#menu" data-scroll>Menu</a></li>
+          <li><a href="#offers" data-scroll>Special Offers</a></li>
+          <li><a href="#gallery" data-scroll>Gallery</a></li>
+          <li><a href="#reviews" data-scroll>Reviews</a></li>
+          <li><a href="#reservation" data-scroll>Reserve</a></li>
+          <li><a href="#contact" data-scroll>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark/light mode">
+          <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+          <span class="theme-toggle-text">Theme</span>
+        </button>
+        <a class="btn btn-gold btn-sm" href="#reservation" data-scroll>Book a Table</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <div class="hero-badge">Fine Dining • Crafted with Passion</div>
+          <h1 class="hero-title">Golden Ember Restaurant</h1>
+          <p class="hero-slogan">Where every bite is a warm glow — premium flavors, candlelight ambience.</p>
+          <div class="hero-cta">
+            <a class="btn btn-gold" href="#reservation" data-scroll>Book a Table</a>
+            <a class="btn btn-ghost" href="#menu" data-scroll>Explore Menu</a>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-card">
+              <div class="meta-title">Today’s Hours</div>
+              <div class="meta-value">5:00 PM – 11:00 PM</div>
+            </div>
+            <div class="meta-card">
+              <div class="meta-title">Signature</div>
+              <div class="meta-value">Ember Char &amp; Truffle Cream</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal" role="form" aria-label="Quick reservation">
+          <h2 class="panel-title">Quick Reservation</h2>
+          <form class="quick-form" id="quickForm">
+            <label>
+              <span>Name</span>
+              <input required name="name" type="text" placeholder="Your name" autocomplete="name" />
+            </label>
+            <label>
+              <span>Phone</span>
+              <input required name="phone" type="tel" placeholder="e.g. +1 555 123 4567" autocomplete="tel" />
+            </label>
+            <label>
+              <span>Date</span>
+              <input required name="date" type="date" />
+            </label>
+            <label>
+              <span>Guests</span>
+              <select required name="guests">
+                <option value="1">1 guest</option>
+                <option value="2">2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
+                <option value="7">7 guests</option>
+                <option value="8">8 guests</option>
+              </select>
+            </label>
+            <button class="btn btn-gold btn-full" type="submit">Request Booking</button>
+            <p class="form-hint">We’ll confirm availability shortly.</p>
+          </form>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <i></i>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" data-section>
+      <div class="container">
+        <header class="section-header reveal">
+          <h2>About Us</h2>
+          <p>Modern hospitality meets timeless craft. Our menu is built on seasonal ingredients and perfected technique.</p>
+        </header>
+
+        <div class="about-grid">
+          <article class="about-story reveal">
+            <h3>Our Story</h3>
+            <p>
+              Golden Ember began as a small kitchen devoted to bold flavors and gentle service. Today, we bring that same
+              warmth to every table — from handcrafted sauces to slow-roasted perfection.
+            </p>
+            <ul class="about-bullets">
+              <li>Seasonal ingredients, curated weekly</li>
+              <li>House-made sauces &amp; artisanal bread</li>
+              <li>Chef-led flavor development</li>
+            </ul>
+          </article>
+
+          <article class="chef-card reveal">
+            <div class="chef-photo" role="img" aria-label="Chef portrait"></div>
+            <div class="chef-info">
+              <h3>Chef Emory Vale</h3>
+              <p>
+                Chef Emory’s cuisine balances smoky depth with elegant brightness. His signature touch: truffle cream
+                paired with ember-charred classics.
+              </p>
+              <div class="chef-stats">
+                <div class="stat"><span>15+</span> Years</div>
+                <div class="stat"><span>1200+</span> Plates</div>
+                <div class="stat"><span>∞</span> Passion</div>
+              </div>
+            </div>
+          </article>
+
+          <div class="about-images reveal" aria-label="High-quality food images">
+            <figure class="img-card">
+              <img alt="Appetizer plate" src="https://images.unsplash.com/photo-1529692236671-f1e0f2a2f0a0?auto=format&fit=crop&w=1200&q=80" loading="lazy" />
+            </figure>
+            <figure class="img-card">
+              <img alt="Chef plating" src="https://images.unsplash.com/photo-1541544181074-e9e0f8d4b0f2?auto=format&fit=crop&w=1200&q=80" loading="lazy" />
+            </figure>
+            <figure class="img-card">
+              <img alt="Dessert with gold accents" src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=80" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section section-alt" id="menu" data-section>
+      <div class="container">
+        <header class="section-header reveal">
+          <h2>Menu</h2>
+          <p>Filter by category. Each dish is crafted for bold aroma, balanced seasoning, and premium finish.</p>
+        </header>
+
+        <div class="menu-toolbar reveal" aria-label="Menu filters">
+          <div class="chips" role="tablist" aria-label="Categories">
+            <button class="chip is-active" type="button" data-category="all" role="tab" aria-selected="true">All</button>
+            <button class="chip" type="button" data-category="pizza" role="tab" aria-selected="false">Pizza</button>
+            <button class="chip" type="button" data-category="burgers" role="tab" aria-selected="false">Burgers</button>
+            <button class="chip" type="button" data-category="pasta" role="tab" aria-selected="false">Pasta</button>
+            <button class="chip" type="button" data-category="desserts" role="tab" aria-selected="false">Desserts</button>
+            <button class="chip" type="button" data-category="drinks" role="tab" aria-selected="false">Drinks</button>
+          </div>
+
+          <div class="menu-search">
+            <label class="sr-only" for="menuSearch">Search menu</label>
+            <input id="menuSearch" type="search" placeholder="Search dishes..." autocomplete="off" />
+          </div>
+        </div>
+
+        <div class="menu-grid" id="menuGrid" aria-live="polite">
+          <!-- Items injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFERS -->
+    <section class="section" id="offers" data-section>
+      <div class="container">
+        <header class="section-header reveal">
+          <h2>Special Offers</h2>
+          <p>Limited-time discounts and premium add-ons — updated weekly.</p>
+        </header>
+
+        <div class="offers-grid" id="offersGrid">
+          <!-- Offers injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section section-alt" id="gallery" data-section>
+      <div class="container">
+        <header class="section-header reveal">
+          <h2>Gallery</h2>
+          <p>Textures, flavors, and atmosphere — hover for elegant highlights.</p>
+        </header>
+
+        <div class="gallery-grid reveal">
+          <figure class="gallery-item">
+            <img alt="Wood-fired pizza" src="https://images.unsplash.com/photo-1548365328-9f547bbf1d3c?auto=format&fit=crop&w=1600&q=80" loading="lazy" />
+            <figcaption>
+              <div class="gallery-title">Wood-fired Pizza</div>
+              <div class="gallery-sub">Crisp crust • Ember char</div>
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img alt="Burger close-up" src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1600&q=80" loading="lazy" />
+            <figcaption>
+              <div class="gallery-title">Smash Burger</div>
+              <div class="gallery-sub">Caramelized edges</div>
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img alt="Pasta bowl" src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=1600&q=80" loading="lazy" />
+            <figcaption>
+              <div class="gallery-title">Truffle Pasta</div>
+              <div class="gallery-sub">Silky cream • Aromatic herbs</div>
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img alt="Cocktails" src="https://images.unsplash.com/photo-1544145945-f9042f84b5e5?auto=format&fit=crop&w=1600&q=80" loading="lazy" />
+            <figcaption>
+              <div class="gallery-title">House Cocktails</div>
+              <div class="gallery-sub">Fresh • Balanced • Bright</div>
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img alt="Dessert" src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=1600&q=80" loading="lazy" />
+            <figcaption>
+              <div class="gallery-title">Golden Dessert</div>
+              <div class="gallery-sub">Warm spice • Velvet finish</div>
+            </figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img alt="Dining ambiance" src="https://images.unsplash.com/photo-1529692236671-f1e0f2a2f0a0?auto=format&fit=crop&w=1600&q=80" loading="lazy" />
+            <figcaption>
+              <div class="gallery-title">Candlelight Dining</div>
+              <div class="gallery-sub">Premium comfort • Quiet glow</div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section" id="reviews" data-section>
+      <div class="container">
+        <header class="section-header reveal">
+          <h2>Customer Reviews</h2>
+          <p>Real words from guests who love our premium atmosphere and flavor.</p>
+        </header>
+
+        <div class="reviews-grid">
+          <article class="review-card reveal" aria-label="Review from Amina">
+            <div class="review-head">
+              <div class="avatar" aria-hidden="true">A</div>
+              <div>
+                <div class="review-name">Amina R.</div>
+                <div class="review-meta">Date: May 18</div>
+              </div>
+              <div class="stars" aria-label="Rated 5 out of 5">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+            </div>
+            <p class="review-text">The truffle pasta was unbelievably creamy. Service felt attentive but never rushed.</p>
+          </article>
+
+          <article class="review-card reveal" aria-label="Review from Daniel">
+            <div class="review-head">
+              <div class="avatar" aria-hidden="true">D</div>
+              <div>
+                <div class="review-name">Daniel K.</div>
+                <div class="review-meta">Date: Jun 2</div>
+              </div>
+              <div class="stars" aria-label="Rated 4 out of 5">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span class="muted">★</span>
+              </div>
+            </div>
+            <p class="review-text">Great ambiance and perfectly charred pizza. The cocktails were fresh and balanced.</p>
+          </article>
+
+          <article class="review-card reveal" aria-label="Review from Sophia">
+            <div class="review-head">
+              <div class="avatar" aria-hidden="true">S</div>
+              <div>
+                <div class="review-name">Sophia L.</div>
+                <div class="review-meta">Date: Jun 11</div>
+              </div>
+              <div class="stars" aria-label="Rated 5 out of 5">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+            </div>
+            <p class="review-text">Every dish looked like art. Dessert was warm, elegant, and not overly sweet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATION -->
+    <section class="section section-alt" id="reservation" data-section>
+      <div class="container">
+        <header class="section-header reveal">
+          <h2>Reservation Form</h2>
+          <p>Secure your table in minutes. Instant client-side validation included.</p>
+        </header>
+
+        <div class="form-wrap reveal">
+          <form class="reservation-form" id="reservationForm" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="rName">Name</label>
+                <input id="rName" name="name" type="text" placeholder="Your full name" required minlength="2" />
+                <p class="error" data-error-for="rName"></p>
+              </div>
+
+              <div class="field">
+                <label for="rEmail">Email</label>
+                <input id="rEmail" name="email" type="email" placeholder="name@example.com" required />
+                <p class="error" data-error-for="rEmail"></p>
+              </div>
+
+              <div class="field">
+                <label for="rPhone">Phone</label>
+                <input id="rPhone" name="phone" type="tel" placeholder="e.g. +1 555 123 4567" required />
+                <p class="error" data-error-for="rPhone"></p>
+              </div>
+
+              <div class="field">
+                <label for="rDate">Date</label>
+                <input id="rDate" name="date" type="date" required />
+                <p class="error" data-error-for="rDate"></p>
+              </div>
+
+              <div class="field">
+                <label for="rTime">Time</label>
+                <select id="rTime" name="time" required>
+                  <option value="" selected disabled>Select time</option>
+                  <option>17:00</option>
+                  <option>17:30</option>
+                  <option>18:00</option>
+                  <option>18:30</option>
+                  <option>19:00</option>
+                  <option>19:30</option>
+                  <option>20:00</option>
+                  <option>20:30</option>
+                  <option>21:00</option>
+                </select>
+                <p class="error" data-error-for="rTime"></p>
+              </div>
+
+              <div class="field">
+                <label for="rGuests">Number of guests</label>
+                <select id="rGuests" name="guests" required>
+                  <option value="" selected disabled>Select guests</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <p class="error" data-error-for="rGuests"></p>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-gold" type="submit">Confirm Reservation</button>
+              <button class="btn btn-ghost" type="reset">Clear</button>
+            </div>
+
+            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          </form>
+
+          <aside class="reservation-aside">
+            <div class="aside-card reveal">
+              <h3>Dining Experience</h3>
+              <p>
+                Enjoy premium courses, curated drinks, and a warm atmosphere. We’ll prepare your table to match
+                your celebration.
+              </p>
+              <div class="aside-list">
+                <div class="aside-item"><span class="dot" aria-hidden="true"></span> Dress Code: Smart Casual</div>
+                <div class="aside-item"><span class="dot" aria-hidden="true"></span> Confirmation via email</div>
+                <div class="aside-item"><span class="dot" aria-hidden="true"></span> Dietary notes welcome</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" data-section>
+      <div class="container">
+        <header class="section-header reveal">
+          <h2>Contact</h2>
+          <p>Reach out for reservations, events, and catering inquiries.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3>Visit Us</h3>
+            <div class="contact-row">
+              <span class="icon" aria-hidden="true">⌁</span>
+              <div>
+                <div class="contact-label">Address</div>
+                <div class="contact-value">88 Ember Avenue, Gold District, NY</div>
+              </div>
+            </div>
+            <div class="contact-row">
+              <span class="icon" aria-hidden="true">☎</span>
+              <div>
+                <div class="contact-label">Phone</div>
+                <a class="contact-value link" href="tel:+15551234567">+1 (555) 123-4567</a>
+              </div>
+            </div>
+            <div class="contact-row">
+              <span class="icon" aria-hidden="true">✉</span>
+              <div>
+                <div class="contact-label">Email</div>
+                <a class="contact-value link" href="mailto:hello@goldenember.restaurant">hello@goldenember.restaurant</a>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <span class="icon" aria-hidden="true">⏱</span>
+              <div>
+                <div class="contact-label">Hours</div>
+                <div class="contact-value">Mon–Sun • 5:00 PM – 11:00 PM</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-wrap reveal" aria-label="Google Maps">
+            <div class="map-placeholder" id="mapPlaceholder">
+              <div class="map-badge">Google Maps</div>
+              <h3>Embedded Map Placeholder</h3>
+              <p>Insert your Google Maps embed iframe below. Layout is ready.</p>
+              <div class="map-note">
+                <span class="gold">Tip:</span> Replace this block with an iframe.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo" aria-hidden="true">✦</div>
+        <div>
+          <div class="footer-name">Golden Ember</div>
+          <div class="footer-copy">Premium dining, glowing nights.</div>
+        </div>
+      </div>
+
+      <div class="footer-social" aria-label="Social media">
+        <a class="social" href="#" aria-label="Instagram"><span aria-hidden="true">⌁</span></a>
+        <a class="social" href="#" aria-label="Facebook"><span aria-hidden="true">f</span></a>
+        <a class="social" href="#" aria-label="Twitter"><span aria-hidden="true">𝕏</span></a>
+        <a class="social" href="#" aria-label="YouTube"><span aria-hidden="true">▶</span></a>
+      </div>
+
+      <div class="footer-legal">© <span id="year"></span> Golden Ember. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
